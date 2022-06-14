@@ -22,4 +22,14 @@ Etape 3 :
   Modifier le fichier "Config.php" qui se trouve dans le dossier "assets" puis "php".
   
 Attention :
-  Il y a des url qui faudra sûrement modifier, comme par exemple celui qui se trouve dans assets->js->script.js
+  Il y a des URL qui faudra sûrement modifier, comme par exemple celui qui se trouve dans assets->js->script.js
+  
+
+# Information complémentaire
+
+  Comment fonctionne mon code ?
+Je récupère les noms & prénoms qui se trouvent dans la base de données, puis je les affiche. À chaque réponse de l'utilisateur, on vérifie si c'est un prénom masculin ou féminin en s'aidant de l'api "https://api.genderize.io".
+Si la réponse est correcte, on gagne un point. Lorsqu'on arrive à 20, on a gagné. 
+
+
+
