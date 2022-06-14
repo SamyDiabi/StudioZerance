@@ -25,6 +25,11 @@ Attention :
   Il y a des URL qui faudra sûrement modifier, comme par exemple celui qui se trouve dans assets->js->script.js
   
 
+# Visuel
+
+<img width="1832" alt="Capture d’écran 2022-06-14 à 16 27 55" src="https://user-images.githubusercontent.com/48333554/173602425-4238fe71-c889-4ccb-8f81-8f1db76f6a9b.png">
+
+
 # Information complémentaire
 
   Comment fonctionne mon code ?
