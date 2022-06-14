@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Studio Zerance.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <!--container-->
+    <section class="container">
+      <!--Box-->
+      <div class="questionBox" id="app">
+        <!--qusetionContainer-->
+        <div class="questionContainer" id="question" v-if="questionIndex<json.length" v-bind:key="questionIndex">
+          <header>
+            <h1 class="title is-6">Studio Zerance. </h1>
+          </header>
+          <!-- questionTitle -->
+          <h2 class="titleContainer title">{{ json[questionIndex].prenom }} {{ json[questionIndex].nom }}, ce prénom est-il masculin ou féminin ?</h2>
+          <!-- quizOptions -->
+          <div class="optionContainer">
+            <div class="option" v-on:click="choiceFunctionH();"> Masculin </div>
+            <div class="option" v-on:click="choiceFunctionF();"> Féminin </div>
+          </div>
+        </div>
+        <!--/questionContainer-->
+        <!--ResultatContainer-->
+        <div class="questionContainer" id="resultat" style="display:none">
+          <header>
+            <h1 class="title is-6">Studio Zerance. </h1>
+          </header>
+          <!-- resultatText -->
+          <h2 class="titleContainer title" id="text-resultat"></h2>
+          <div class="optionContainer" style="text-align: center;">
+            <a class="button" @click="restart()">restart <i class="fa fa-refresh"></i>
+            </a>
+          </div>
+        </div>
+        <!--/ResultatContainer-->
+      </div>
+      <!--/Box-->
+    </section>
+    <!--/container-->
+    <!-- partial -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
