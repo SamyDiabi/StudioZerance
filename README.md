@@ -31,5 +31,5 @@ Attention :
 Je récupère les noms & prénoms qui se trouvent dans la base de données, puis je les affiche. À chaque réponse de l'utilisateur, on vérifie si c'est un prénom masculin ou féminin en s'aidant de l'api "https://api.genderize.io".
 Si la réponse est correcte, on gagne un point. Lorsqu'on arrive à 20, on a gagné. 
 
-
+Le temps passé : 1 jour
 
